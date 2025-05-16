@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muna | Shopify Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .typewriter-container {
+      display: inline-block; /* Keeps the content inline */
+      overflow: hidden; /* Hides the overflowed content */
+    }
+    .typewriter {
+      font-family: Courier, monospace;
+      font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid rgb(250, 246, 246);
+      animation: typing 3s steps(40) 1s 1 normal both, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <!-- <header class="bg-green-900 fixed top-0 left-0 w-full  shadow z-50 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl  font-bold">Muna</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-teal-400">About</a>
+        <a href="#services" class="hover:text-teal-400">Services</a>
+        <a href="#skills" class="hover:text-teal-400">Skills</a>
+        <a href="#projects" class="hover:text-teal-400">Projects</a>
+        <a href="#contact" class="hover:text-teal-400">Contact</a>
+      </nav>
+    </div>
+  </header> -->
+
+  <div class="navbar bg-black fixed top-0 left-0 w-full  shadow z-50 text-white">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-green-900 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a href="#about" class="hover:text-teal-400">About</a></li>
+        <li>
+          <a href="#services" class="hover:text-teal-400">Services</a>
+        </li>
+        <li> <a href="#skills" class="hover:text-teal-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl">Muna</a>
+  </div>
+  <div class="navbar-end hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+       <li><a href="#about" class="hover:text-teal-400">About</a></li>
+        <li>
+          <a href="#services" class="hover:text-teal-400">Services</a>
+        </li>
+        <li> <a href="#skills" class="hover:text-teal-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+    </ul>
+  </div>
+  
+</div>
+
+  <!-- Hero Section -->
+  <section class="bg-[#212529] text-white py-20 mt-8  text-center">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Muna</h2>
+    <p class="text-xl mb-6">Shopify Developer | Custom Store Setup & Dropshipping Expert</p>
+    <a href="#contact" class="bg-teal-600 text-white px-6 py-3 rounded-lg hover:bg-teal-700 transition">Hire Me</a>
+  </section>
+
+<hr>
+
+
+
+  <!-- About Section -->
+  <section id="about" class=" w-full pb-12 text-white bg-[#212529] px-4  ">
+   <div class="py-16 max-w-5xl  mx-auto px-4">
+     <h2 class="text-3xl text-teal-400 font-bold mb-4">About Me</h2>
+    <div class="typewriter-container">
+       <p class="text-lg  typewriter">
+   Hello, I’m Marziya Muna</p>
+    </div>
+    
+   <p>a passionate Shopify developer with over 5 years of experience creating high-converting eCommerce stores.
+I specialize in building Shopify dropshipping stores. From store design to product research, payment gateways, and SEO optimization, I’m here to bring your vision to life and create a store that truly stands out.
+    </p>
+   </div>
+  </section>
+  <hr>
+
+
+
+  <!-- skillls -->
+
+  
+<div  class="pt-12 bg-[#212529] pb-12 px-4">
+  <div  class="max-w-5xl mx-auto">
+        <div>
+    <h2 class="text-3xl font-bold text-teal-400 mb-6">My info</h2>
+  </div>
+  <div class="tabs tabs-boxed w-full bg-gray-950 text-white  font-bold  text-2xl flex justify-center">
+  <a role="tab" class="tab tab-active bg-white text-green-900 py-2 w-[100px] sm:w-[150px] md:w-[200px] lg:w-[250px]" onclick="showTab(event, 'skills')">Skills</a>
+  <a role="tab" class="tab w-[100px] sm:w-[150px] md:w-[200px] py-2 lg:w-[250px]" onclick="showTab(event, 'education')">Education</a>
+  <a role="tab" class="tab w-[100px] sm:w-[150px] md:w-[200px] py-2 lg:w-[250px]" onclick="showTab(event, 'experience-panel')">Experience</a>
+</div>
+
+
+  <!-- Tab Panels -->
+  <div class="pt-6 bg-[#212529]">
+    <div id="skills" class="tab-panel">
+      <ul class=" ml-5  grid grid-cols-1 md:grid-cols-2  gap-2">
+        <li class="bg-black text-white text-center p-2  font-semibold">Shopify Store Setup & Theme Customization</li>
+         <li class="bg-black text-white text-center p-2  font-semibold">Product Research for Dropshipping</li>
+        <li class="bg-black text-white text-center p-2  font-semibold" >Payment & Shipping Setup</li>
+        <li class="bg-black text-white text-center p-2  font-semibold">SEO Optimization</li>
+        <li class="bg-black text-white text-center p-2  font-semibold">E-commerce Website/Business Website</li>
+        <li class="bg-black text-white text-center p-2  font-semibold">Custom Website With HTML,CSS,JS and NodeJs.</li>
+        <li class="bg-black text-white text-center p-2  font-semibold">React App Integration.</li>
+       
+      </ul>
+    </div>
+
+    <div id="education" class="tab-panel hidden">
+      <!-- <p><strong>Bachelor of Education</strong><br />
+      Government Teachers’ Training College, IER Department<br />
+      (Ongoing)</p> -->
+
+      <ul class=" ml-5  grid grid-cols-1 md:grid-cols-2  gap-2">
+        <li class="bg-black text-white text-center p-2  font-semibold">B.Sc. Degree. computer science <br>
+          East West University <br>
+           Graduated (2022)
+        </li>
+        <li class="bg-black text-white text-center p-2  font-semibold" >Higher Secondary Certificate(HSC) <br>
+          Result: 5.00
+          Year: 2017
+        </li>
+        <li class="bg-black text-white text-center p-2  font-semibold"> Secondary School Certificate(SSC) <br>
+          Result: 5.00
+          Year: 2015</li>
+        
+      </ul>
+    </div>
+
+    <div id="experience-panel" class="tab-panel hidden">
+      <p class=" text-white text-2xl text-center">5+ years of experience building high-converting Shopify stores across various niches, including fashion, home decor, and digital products.</p>
+    </div>
+  </div>
+  </div>
+ 
+</div>
+  <!-- Services -->
+  <section id="services" class="py-16 bg-[#212529] px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-teal-400 mb-6">My Services</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-black text-white shadow rounded-lg">
+          <h3 class="font-semibold text-xl mb-2">Shopify Store Setup</h3>
+          <p>End-to-end store setup, theme installation, homepage customization, navigation, and product organization.</p>
+        </div>
+        <div class="p-6 bg-black text-white shadow rounded-lg">
+          <h3 class="font-semibold text-xl mb-2">Custom Theme Development</h3>
+          <p>Proficient in Liquid, HTML5, CSS3, and JavaScript for customizing or developing Shopify themes.</p>
+        </div>
+        <div class="p-6 bg-black text-white shadow rounded-lg">
+          <h3 class="font-semibold text-xl mb-2">App Integration</h3>
+          <p> Skilled in integrating and configuring top Shopify apps (Klaviyo, Judge.me, DSers, ReConvert, etc.) to enhance store functionality.</p>
+        </div>
+        <div class="p-6 bg-black text-white shadow rounded-lg">
+          <h3 class="font-semibold text-xl mb-2">Shopify on-page SEO</h3>
+          <p> On-page SEO optimization, meta tags, image ALT text, URL structure, and speed performance tuning.</p>
+        </div>
+        <div class="p-6 bg-black text-white shadow rounded-lg">
+          <h3 class="font-semibold text-xl mb-2">Payment Gateways</h3>
+          <p>Setup of payment gateways (Stripe, PayPal) and complex shipping zones/rates with tax compliance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Projects -->
+  
+
+
+
+
+  <section id="projects" class="py-16 bg-[#212529] text-white px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl text-teal-400 font-bold  mb-10">My Projects</h2>
+
+      <!-- Projects Wrapper -->
+      <div id="projectWrapper">
+  
+        <!-- Project 1 -->
+        <div class="grid md:grid-cols-2 gap-8 items-center project-item">
+          <!-- Carousel -->
+          <div class="carousel w-full">
+            <div id="p1-slide1" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/diagno center1.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p1-slide4" class="btn btn-circle">❮</a>
+                <a href="#p1-slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p1-slide2" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/diagno center2.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p1-slide1" class="btn btn-circle">❮</a>
+                <a href="#p1-slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p1-slide3" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/diagnocenter3.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p1-slide2" class="btn btn-circle">❮</a>
+                <a href="#p1-slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p1-slide4" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/diagnocenter 4.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p1-slide3" class="btn btn-circle">❮</a>
+                <a href="#p1-slide5" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p1-slide5" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/diagno center 5.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p1-slide4" class="btn btn-circle">❮</a>
+                <a href="#p1-slide6" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p1-slide6" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/diagno center 6.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p1-slide5" class="btn btn-circle">❮</a>
+                <a href="#p1-slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Info -->
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Medical Center</h3>
+            <p class="text-gray-300 mb-4">
+              Your Health Medical Center is committed to providing compassionate, high-quality healthcare for all ages.
+We offer a full range of services including diagnostics, general medicine, pediatrics, and minor surgeries.
+Our experienced doctors and staff ensure personalized care in a clean, modern facility.
+We prioritize patient comfort, safety, and timely treatment.
+Your well-being is our mission — trusted care, every step of the way.
+            </p>
+            <a href="https://diagnocare-48d76.web.app/" target="_blank" class="btn btn-primary bg-teal-400 text-white">View Live</a>
+          </div>
+        </div>
+
+ <!-- project2 -->
+  <!-- Projects Wrapper -->
+      <div id="projectWrapper">
+  
+         <div class="grid md:grid-cols-2 gap-8 items-center mt-12 project-item">
+         
+  
+          <!-- Info -->
+          <div>
+            <h3 class="text-2xl font-bold mb-2">JuteWood Store</h3>
+            <p class="text-gray-300 mb-4">
+              Jutewood Decor Store blends natural elegance with handcrafted beauty.
+We specialize in eco-friendly home décor made from jute, wood, and sustainable materials.
+Each piece reflects rustic charm and timeless artistry, perfect for any living space.
+From wall hangings to tableware, our collections bring warmth and character.
+Decorate consciously — bring nature home with Jutewood.
+            </p>
+            <a href="https://assignment-10-143ad.web.app/" target="_blank" class="btn btn-primary bg-teal-400 text-white">View Live</a>
+          </div>
+
+           <!-- Carousel -->
+          <div class="carousel w-full">
+            <div id="p2-slide1" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/jutewood1.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p2-slide4" class="btn btn-circle">❮</a>
+                <a href="#p2-slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p2-slide2" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/jutewwood2.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p2-slide1" class="btn btn-circle">❮</a>
+                <a href="#p2-slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p2-slide3" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/jutewood3.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p2-slide2" class="btn btn-circle">❮</a>
+                <a href="#p2-slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p2-slide4" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/jutewwod4.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p2-slide3" class="btn btn-circle">❮</a>
+                <a href="#p2-slide5" class="btn bt-circle">❯</a>
+              </div>
+            </div>
+            <div id="p2-slide5" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/jutewood5.jpg"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p2-slide4" class="btn btn-circle">❮</a>
+                <a href="#p2-slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        </div>
+
+        <!-- project3  -->
+
+        <!-- Projects Wrapper -->
+      <div id="projectWrapper">
+  
+        
+        <div class="grid md:grid-cols-2 gap-8 items-center mt-12  project-item">
+          <!-- Carousel -->
+          <div class="carousel w-full">
+            <div id="p3-slide1" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/volunteersphere-3fe43.web.app_.png"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p3-slide4" class="btn btn-circle">❮</a>
+                <a href="#p3-slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p3-slide2" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/volunteersphere-3fe43.web.app_ (2).png"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p3-slide1" class="btn btn-circle">❮</a>
+                <a href="#p3-slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p3-slide3" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/volunteersphere-3fe43.web.app_ (3).png"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p3-slide2" class="btn btn-circle">❮</a>
+                <a href="#p3-slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="p3-slide4" class="carousel-item relative w-full">
+              <div class="h-[350px] overflow-y-auto w-full">
+                <img
+                  src="images/volunteersphere-3fe43.web.app_ (4).png"
+                  class="w-full object-contain" />
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#p3-slide3" class="btn btn-circle">❮</a>
+                <a href="#p3-slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          
+       
+          </div>
+  
+          <!-- Info -->
+          <div>
+            <h3 class="text-2xl font-bold mb-2">Volunteer Sphere</h3>
+            <p class="text-gray-300 mb-4">
+              Volunteer Sphere Network connects passionate individuals with meaningful causes.
+Our platform makes it easy to discover local and virtual volunteer opportunities.
+Whether you care about education, health, environment, or social change — we’ve got you covered.
+Track your impact, earn certificates, and grow your skills while helping others.
+Be the change — volunteer with purpose, anytime, anywhere. </p>
+
+      <a href="https://volunteersphere-3fe43.web.app/" target="_blank" class="btn btn-primary bg-teal-400 text-white">View Live</a>
+          </div>
+        </div>
+
+  
+       
+           
+       
+  
+       
+        
+  
+      </div>
+    </div>
+  </section>
+  <hr>
+
+   <footer id="contact" class="footer sm:footer-horizontal px-14 py-14 bg-[#212529] flex flex-col   text-neutral-content items-center p-4">
+    <aside class="flex flex-col w-full items-center ">
+        <h2 class="text-3xl font-bold  text-center">Contact Me</h2>
+        <p class="text-lg text-center">Let’s work together! Reach out via email or social media.</p>
+  
+    </aside>
+    <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=munamarziya11@gmail.com" target="_blank" rel="noopener noreferrer">
+      <img src="images/icons8-gmail-48.png" alt="">
+      </a>
+      <a href="https://www.fiverr.com/s/DBxPZrN" class=" font-bold text-white text-2xl pt-2">fiverr.</a>
+      
+    
+      
+    </nav>
+  </footer>
+
+<script>
+  function showTab(event, tabId) {
+    console.log("Switching to:", tabId);
+
+    // Hide all tab panels
+    document.querySelectorAll('.tab-panel').forEach(panel => {
+      panel.classList.add('hidden');
+    });
+
+    // Show selected panel
+    const activePanel = document.getElementById(tabId);
+    if (activePanel) {
+      activePanel.classList.remove('hidden');
+    } else {
+      console.warn('Tab panel not found:', tabId);
+    }
+
+    // Remove active state from all tabs
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.classList.remove('tab-active', 'bg-white', 'text-green-900');
+    });
+
+    // Add active state to clicked tab
+    event.target.classList.add('tab-active', 'bg-white', 'text-green-900');
+  }
+
+  window.onload = () => {
+    const defaultTab = document.querySelector('[data-tab="skills"]');
+    if (defaultTab) {
+      defaultTab.click();
+    } else {
+      console.warn('Default tab not found');
+    }
+  };
+</script>
+
+
+
+
+  
+
+
+  
+</body>
+</html>
+<!-- git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/muna383/Portfolio_shopify.git
+git remote add origin https://github.com/muna383/PORTFOLIO.git
+git push -u origin main -->
